@@ -1,8 +1,11 @@
 import pl.github.DominasPL.arrays.SimpleArray;
+import pl.github.DominasPL.loops.LoopsTest;
 import pl.github.DominasPL.methods.MyString;
 import pl.github.DominasPL.methods.Temperature;
 import pl.github.DominasPL.objects.Dog;
 import pl.github.DominasPL.objects.Owner;
+
+import java.util.Random;
 
 public class Main {
 
@@ -23,7 +26,19 @@ public class Main {
 //        int[] numbers = {2, 4, 2, 10, 92};
 //        System.out.println(SimpleArray.sumArrayElements(numbers));
 //        System.out.println(SimpleArray.returnTheGreatestNumber(numbers));
-        SimpleArray.createSudokuBoard();
+//        SimpleArray.createSudokuBoard();
+
+        //Exercise 5
+        int [][] numbers = new int[3][3];
+        Random random = new Random();
+        for (int i = 0; i < numbers.length; i++) {
+            for (int j = 0; j < numbers[i].length; j++) {
+                numbers[i][j] = random.nextInt(10);
+            }
+        }
+//        LoopsTest.displayOddNumbers();
+        LoopsTest.sumArrayElements(numbers);
+
     }
 
 
