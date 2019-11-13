@@ -1,3 +1,4 @@
+import pl.github.DominasPL.arrays.SimpleArray;
 import pl.github.DominasPL.methods.MyString;
 import pl.github.DominasPL.methods.Temperature;
 import pl.github.DominasPL.objects.Dog;
@@ -15,9 +16,14 @@ public class Main {
 //        Dog dog = new Dog("Fafik", 20, owner);
 //        System.out.println(dog);
 
-        //Exercise3
-        MyString.displayTextAndCountLen("Today is rainny day", "There is too much snow outside", "We have sunny, hot day");
+//        //Exercise3
+//        MyString.displayTextAndCountLen("Today is rainny day", "There is too much snow outside", "We have sunny, hot day");
 
+        //Exercise 4
+//        int[] numbers = {2, 4, 2, 10, 92};
+//        System.out.println(SimpleArray.sumArrayElements(numbers));
+//        System.out.println(SimpleArray.returnTheGreatestNumber(numbers));
+        SimpleArray.createSudokuBoard();
     }
 
 
