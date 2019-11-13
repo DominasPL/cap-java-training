@@ -1,4 +1,4 @@
-package methods;
+package pl.github.DominasPL.methods;
 
 public class Temperature {
 
