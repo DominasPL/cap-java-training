@@ -1,4 +1,5 @@
 
+import pl.github.DominasPL.equals_hashcode.Human;
 import pl.github.DominasPL.exceptions.NumberSqrt;
 import pl.github.DominasPL.inheritance.Animal;
 import pl.github.DominasPL.inheritance.Carp;
@@ -95,6 +96,20 @@ public class Main {
 //        char c = '~';
 //        int asciiNum = (int) c;
 //        System.out.println(asciiNum);
+
+        //Exercise 11
+//        double a = 0.3;
+//        double b = 0.2 + 0.1;
+//        System.out.println(Math.abs(a - b) < 0.0000001);
+
+        //Exercise 12
+//        Human human1 = new Human("Dominik", "Stepuch", "95050704899");
+//        Human human2 = new Human("Dominik", "Stepuch", "95050704810");
+//
+//        System.out.println(human1.hashCode());
+//        System.out.println(human2.hashCode());
+
+        //Exercise 13
 
     }
 
