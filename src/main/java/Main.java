@@ -80,13 +80,25 @@ public class Main {
 //        System.out.println(carp.toString());
 
         //Exercise 9
-        System.out.println(NumberSqrt.calculateSqrt());
+//        System.out.println(NumberSqrt.calculateSqrt());
 
+        //Exercise 10
+//        int number1 = getArgument();
+//        double multiplication = number * Math.PI;
+//        System.out.println(multiplication);
+//        System.out.println((int) multiplication);
 
+//        int number1 = getArgument();
+//        int number2 = getArgument();
+//        System.out.println((double)number1/number2);
+
+//        char c = '~';
+//        int asciiNum = (int) c;
+//        System.out.println(asciiNum);
 
     }
 
-    public static long getArgument() {
+    public static int getArgument() {
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("Give a number: ");
@@ -95,7 +107,7 @@ public class Main {
             System.out.print("Give a number: ");
         }
 
-        long l = scanner.nextLong();
+        int l = scanner.nextInt();
         scanner.nextLine();
 
         return l;
