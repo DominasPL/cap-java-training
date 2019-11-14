@@ -1,12 +1,14 @@
-import pl.github.DominasPL.arrays.SimpleArray;
-import pl.github.DominasPL.loops.LoopsTest;
-import pl.github.DominasPL.methods.MyString;
-import pl.github.DominasPL.methods.Temperature;
-import pl.github.DominasPL.objects.Dog;
-import pl.github.DominasPL.objects.Owner;
-import pl.github.DominasPL.scanner_and_primitives.Subjects;
 
+import pl.github.DominasPL.interfaces.Addition;
+import pl.github.DominasPL.interfaces.Computation;
+import pl.github.DominasPL.interfaces.Multiplication;
+
+import javax.xml.crypto.Data;
+import java.awt.print.Pageable;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Main {
 
@@ -42,18 +44,67 @@ public class Main {
 
 
         //Exercise 6
-        int[][] grades = new int[4][];
-        grades[0] = new int[] {2, 4, 6, 2, 4};
-        grades[1] = new int[] {2, 5, 6};
-        grades[2] = new int[] {2, 4, 5};
-        grades[3] = new int[] {1, 4, 5, 3, 2};
+//        int[][] grades = new int[4][];
+//        grades[0] = new int[] {2, 4, 6, 2, 4};
+//        grades[1] = new int[] {2, 5, 6};
+//        grades[2] = new int[] {2, 4, 5};
+//        grades[3] = new int[] {1, 4, 5, 3, 2};
+//
+//        double[] averages = Subjects.countAverageRating(grades);
+//        for (double average : averages) {
+//            System.out.println("Subject 1 grades average: " + average);
+//        }
 
-        double[] averages = Subjects.countAverageRating(grades);
-        for (double average : averages) {
-            System.out.println("Subject 1 grades average: " + average);
+        //Exercise 7
+
+        Computation computation;
+
+        if (getUserChoice().equals("M")) {
+            computation = new Multiplication();
+        } else {
+            computation = new Addition();
         }
 
+        double arg1 = getArgument();
+        double arg2 = getArgument();
 
+        double result = computation.compute(arg1, arg2);
+
+        System.out.println("The result is: " + result);
+
+
+    }
+
+    public static long getArgument() {
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Give a number: ");
+        while (!scanner.hasNextLong()) {
+            scanner.nextLine();
+            System.out.print("Give a number: ");
+        }
+
+        long l = scanner.nextLong();
+        scanner.nextLine();
+
+        return l;
+    }
+
+
+
+    public static String getUserChoice() {
+
+        Scanner scanner = new Scanner(System.in);
+        while (true) {
+            System.out.print("Multiply or add? M/A: ");
+            String answer = scanner.nextLine();
+
+            if (answer.equals("M") || answer.equals("A")) {
+                return answer;
+            } else {
+                System.out.println("Incorrect choice. Please try again!");
+            }
+        }
     }
 
 
