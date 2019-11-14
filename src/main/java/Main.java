@@ -1,4 +1,5 @@
 
+import pl.github.DominasPL.exceptions.NumberSqrt;
 import pl.github.DominasPL.inheritance.Animal;
 import pl.github.DominasPL.inheritance.Carp;
 import pl.github.DominasPL.interfaces.Addition;
@@ -74,10 +75,12 @@ public class Main {
 //
 //        System.out.println("The result is: " + result);
 
-        //Exercise 8
-        Animal carp = new Carp();
-        System.out.println(carp.toString());
+//        //Exercise 8
+//        Animal carp = new Carp();
+//        System.out.println(carp.toString());
 
+        //Exercise 9
+        System.out.println(NumberSqrt.calculateSqrt());
 
 
 
