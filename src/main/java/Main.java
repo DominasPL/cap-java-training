@@ -1,4 +1,6 @@
 
+import pl.github.DominasPL.inheritance.Animal;
+import pl.github.DominasPL.inheritance.Carp;
 import pl.github.DominasPL.interfaces.Addition;
 import pl.github.DominasPL.interfaces.Computation;
 import pl.github.DominasPL.interfaces.Multiplication;
@@ -56,21 +58,27 @@ public class Main {
 //        }
 
         //Exercise 7
+//
+//        Computation computation;
+//
+//        if (getUserChoice().equals("M")) {
+//            computation = new Multiplication();
+//        } else {
+//            computation = new Addition();
+//        }
+//
+//        double arg1 = getArgument();
+//        double arg2 = getArgument();
+//
+//        double result = computation.compute(arg1, arg2);
+//
+//        System.out.println("The result is: " + result);
 
-        Computation computation;
+        //Exercise 8
+        Animal carp = new Carp();
+        System.out.println(carp.toString());
 
-        if (getUserChoice().equals("M")) {
-            computation = new Multiplication();
-        } else {
-            computation = new Addition();
-        }
 
-        double arg1 = getArgument();
-        double arg2 = getArgument();
-
-        double result = computation.compute(arg1, arg2);
-
-        System.out.println("The result is: " + result);
 
 
     }
